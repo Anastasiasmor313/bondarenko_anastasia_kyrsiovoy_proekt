@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="stylesheet" href="glavn.css">
+</head>
+<body>
+    <header class="header">
+        <a href="/" class="logo"><img src="" >Мадлен</a>
+        <nav class="nav-menu">
+            <a href="/" class="nav-link">Главная</a>
+            <a href="/news" class="nav-link">Новости</a>
+            <a href="/catalog" class="nav-link">Ассортимент</a>
+            <a href="/contacts" class="nav-link">Контакты</a>
+            <a href="/cart" class="nav-link">Корзина</a>
+            <button class="order-btn">Заказать</button>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Кондитерская "Мадлен"</h1>
+            <p>Сладкие мечты становятся реальностью</p>
+            <button class="order-btn">Смотреть ассортимент</button>
+        </div>
+    </section>
+
+    <section class="news">
+        <h2>Новости</h2>
+        <div class="news-grid">
+            <article class="news-card">
+                <img src="img/novosti_1.jpg" alt="News 1" class="news-img">
+                <div class="news-content">
+                    <h3>Новая коллекция тортов</h3>
+                    <p>Встречайте нашу новую летнюю коллекцию тортов с свежими сезонными ягодами...</p>
+                    <button class="order-btn">Подробнее</button>
+                </div>
+            </article>
+            <article class="news-card">
+                <img src="img/novosti_2.jpg" alt="News 2" class="news-img">
+                <div class="news-content">
+                    <h3>Мастер-класс по выпечке</h3>
+                    <p>Приглашаем новую точку в центре города! Приготовьте вкуснейшие моти с кондитерами...</p>
+                    <button class="order-btn">Подробнее</button>
+                </div>
+            </article>
+            <article class="news-card">
+                <img src="img/novosti_3.jpg" alt="News 3" class="news-img">
+                <div class="news-content">
+                    <h3>Скидки на десерты</h3>
+                    <p>Каждый понедельник скидка 20% на все пирожные из нашей витрины...</p>
+                    <button class="order-btn">Подробнее</button>
+                </div>
+            </article>
+            <article class="news-card">
+                <img src="img/novosti_4.jpg" alt="News 4" class="news-img">
+                <div class="news-content">
+                    <h3>Открываем новую точку!</h3>
+                    <p>Открываем новую точку в центре города! Ждем вас на открытии по адресу...</p>
+                    <button class="order-btn">Подробнее</button>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="products">
+        <h2>Новинки</h2>
+        <div class="product-slider">
+            <button class="slider-btn prev-btn">&#x2190;</button>
+            <div class="product-container">
+                <div class="product-card">
+                    <img src="img/nov_1.jpg" alt="Черничный чизкейк в белом шоколаде " class="product-img">
+                    <h3 class="product-title">Черничный чизкейк в белом шоколаде </h3>
+                </div>
+                <div class="product-card">
+                    <img src="img/nov_2.jpg" alt="Муссовое пирожное" class="product-img">
+                    <h3 class="product-title">Муссовое пирожное клубника-маракуйя</h3>
+                </div>
+                <div class="product-card">
+                    <img src="img/nov_3.jpeg" alt="Макаронс" class="product-img">
+                    <h3 class="product-title">Макаронс черника-ежевика</h3>
+                </div>
+                <div class="product-card">
+                    <img src="product4.jpg" alt="" class="product-img">
+                    <h3 class="product-title">&#x41c;&#x430;&#x43a;&#x430;&#x440;&#x43e;&#x43d;&#x441; &#x430;&#x441;&#x441;&#x43e;&#x440;&#x442;&#x438;</h3>
+                </div>
+                <div class="product-card">
+                    <img src="product5.jpg" alt="" class="product-img">
+                    <h3 class="product-title">&#x427;&#x438;&#x437;&#x43a;&#x435;&#x439;&#x43a; &#x41d;&#x44c;&#x44e;-&#x419;&#x43e;&#x440;&#x43a;</h3>
+                </div>
+                <div class="product-card">
+                    <img src="product6.jpg" alt="" class="product-img">
+                    <h3 class="product-title">&#x422;&#x438;&#x440;&#x430;&#x43c;&#x438;&#x441;&#x443;</h3>
+                </div>
+            </div>
+            <button class="slider-btn next-btn">&#x2192;</button>
+        </div>
+        <button class="more-btn">&#x411;&#x43e;&#x43b;&#x44c;&#x448;&#x435;</button>
+    </section>
+
+    <section class="order-form">
+        <div class="form-container">
+            <h2>Оформление заказа</h2>
+            <form id="orderForm">
+                <div class="form-group">
+                    <label class="required">ФИО</label>
+                    <input type="text" class="form-control" name="fullName" required>
+                </div>
+                <div class="form-group">
+                    <label class="required">Телефон</label>
+                    <input type="tel" class="form-control" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label class="required">Email</label>
+                    <input type="email" class="form-control" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label class="required">Название продукта</label>
+                    <input type="text" class="form-control" name="productName" required>
+                </div>
+                <div class="form-group">
+                    <label class="required">Количество порций</label>
+                    <input type="number" class="form-control" name="portions" min="1" required>
+                </div>
+                <div class="form-group">
+                    <label class="required">Дата изготовления заказа</label>
+                    <input type="date" class="form-control" name="orderDate" required>
+                </div>
+                <div class="form-group">
+                    <label class="required">Способ получсения заказа</label>
+                    <select class="form-control" name="deliveryMethod" required>
+                        <option value class="option_col">Выберите способ получения заказа</option>
+                        <option value="pickup" class="option_col">Самовывоз</option>
+                        <option value="delivery" class="option_col">Доставка</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Комментарий к заказу</label>
+                    <textarea class="form-control" name="comments" rows="4" style="border: 1px solid #ffffff;"></textarea>
+                </div>
+                <button type="submit" class="order-btn">Заказать</button>
+            </form>
+        </div>
+        <div class="modal" id="successModal">
+            <div class="modal-content">
+                <h3>Спасибо!</h3>
+                <p>Ваш заказ принят! мы свяжемся с вами в ближайшее время для подтверждения.</p>
+                <button class="order-btn" onclick="closeModal()">Закрыть</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h3>Sweet Dreams</h3>
+                <p>&#x410;&#x434;&#x440;&#x435;&#x441;: &#x443;&#x43b;. &#x41f;&#x435;&#x43a;&#x430;&#x440;&#x43d;&#x430;&#x44f;, 123</p>
+                <p>&#x422;&#x435;&#x43b;&#x435;&#x444;&#x43e;&#x43d;: +7 (999) 123-45-67</p>
+            </div>
+            <div class="footer-links">
+                <a href="/">&#x413;&#x43b;&#x430;&#x432;&#x43d;&#x430;&#x44f;</a>
+                <a href="/news">&#x41d;&#x43e;&#x432;&#x43e;&#x441;&#x442;&#x438;</a>
+                <a href="/catalog">&#x410;&#x441;&#x441;&#x43e;&#x440;&#x442;&#x438;&#x43c;&#x435;&#x43d;&#x442;</a>
+                <a href="/contacts">&#x41a;&#x43e;&#x43d;&#x442;&#x430;&#x43a;&#x442;&#x44b;</a>
+                <a href="/cart">&#x41a;&#x43e;&#x440;&#x437;&#x438;&#x43d;&#x430;</a>
+            </div>
+            <div class="social-links">
+                <h4>&#x41c;&#x44b; &#x432; &#x441;&#x43e;&#x446;&#x441;&#x435;&#x442;&#x44f;&#x445;:</h4>
+                <div class="social-icons">
+                    <a href="https://t.me/sweetdreams" class="social-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20.665 3.717l-17.73 6.837c-1.21.486-1.203 1.161-.222 1.462l4.552 1.42l10.532-6.645c.498-.303.953-.14.579.192l-8.533 7.701l-.321 4.843c.47 0 .677-.216.94-.47l2.26-2.2l4.709 3.477c.867.48 1.49.234 1.71-.804l3.081-14.502c.317-1.269-.485-1.84-1.557-1.311z" fill="currentColor"/>
+                        </svg>
+                        <span>Telegram</span>
+                    </a>
+                    <a href="https://vk.com/sweetdreams" class="social-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19.915 13.028c-.388-.49-.277-.708 0-1.146.005-.005 3.208-4.431 3.538-5.932l.002-.001c.164-.547 0-.949-.793-.949h-2.624c-.668 0-.976.345-1.141.731 0 0-1.336 3.198-3.226 5.271-.61.599-.892.791-1.225.791-.164 0-.419-.192-.419-.739V5.949c0-.656-.187-.949-.74-.949H9.161c-.419 0-.668.306-.668.591 0 .622.945.765 1.043 2.515v3.797c0 .832-.151.985-.486.985-.892 0-3.057-3.211-4.34-6.886-.259-.713-.512-1.001-1.185-1.001H.9c-.749 0-.9.345-.9.731 0 .682.892 4.073 4.148 8.553C6.318 17.343 9.374 19 12.154 19c1.671 0 1.875-.368 1.875-1.001 0-2.922-.151-3.198.686-3.198.388 0 1.056.192 2.616 1.667C19.114 18.217 19.407 19 20.405 19h2.624c.748 0 1.127-.368.909-1.094-.499-1.527-3.871-4.668-4.023-4.878z" fill="currentColor"/>
+                        </svg>
+                        <span>VKontakte</span>
+                    </a>
+                    <a href="https://yandex.ru/maps/org/sweet_dreams" class="social-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 0C7.802 0 4 3.403 4 7.602C4 11.8 12 24 12 24s8-12.2 8-16.398C20 3.403 16.199 0 12 0zm0 11c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3z" fill="currentColor"/>
+                        </svg>
+                        <span>&#x41d;&#x430; &#x43a;&#x430;&#x440;&#x442;&#x435;</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<script>document.getElementById('orderForm').addEventListener('submit', function (e) {
+  e.preventDefault();
+  const form = e.target;
+  const formData = new FormData(form);
+  let isValid = true;
+  form.querySelectorAll('[required]').forEach(field => {
+    if (!field.value.trim()) {
+      isValid = false;
+      field.classList.add('invalid');
+    } else {
+      field.classList.remove('invalid');
+    }
+  });
+  if (!isValid) {
+    alert('Пожалуйста, заполните все обязательные поля');
+    return;
+  }
+  showModal();
+  form.reset();
+});
+document.querySelectorAll('.form-control').forEach(input => {
+  input.addEventListener('input', function () {
+    if (this.hasAttribute('required')) {
+      if (this.value.trim()) {
+        this.classList.remove('invalid');
+      } else {
+        this.classList.add('invalid');
+      }
+    }
+  });
+});
+const productContainer = document.querySelector('.product-container');
+const prevBtn = document.querySelector('.prev-btn');
+const nextBtn = document.querySelector('.next-btn');
+let position = 0;
+let visibleCards = 3;
+const totalCards = 6;
+function updateSliderPosition() {
+  productContainer.style.transform = `translateX(${position}px)`;
+}
+function updateVisibleCards() {
+  if (window.innerWidth > 1200) {
+    visibleCards = 3;
+  } else if (window.innerWidth > 768) {
+    visibleCards = 2;
+  } else {
+    visibleCards = 1;
+  }
+}
+window.addEventListener('resize', () => {
+  updateVisibleCards();
+  position = 0;
+  updateSliderPosition();
+});
+updateVisibleCards();
+nextBtn.addEventListener('click', () => {
+  const cardWidth = document.querySelector('.product-card').offsetWidth;
+  if (Math.abs(position) < (totalCards - visibleCards) * cardWidth) {
+    position -= cardWidth;
+    updateSliderPosition();
+  }
+});
+prevBtn.addEventListener('click', () => {
+  const cardWidth = document.querySelector('.product-card').offsetWidth;
+  if (position < 0) {
+    position += cardWidth;
+    updateSliderPosition();
+  }
+});
+function showModal() {
+  document.getElementById('successModal').style.display = 'flex';
+}
+function closeModal() {
+  document.getElementById('successModal').style.display = 'none';
+}</script>
+</body>
+</html>
